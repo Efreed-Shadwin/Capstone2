@@ -7,15 +7,17 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link href="CSS/main.css" rel="stylesheet" >
     </head>
-    <body>
+    <body class="bg-warning-subtle">
         <header>
-            <div class="container">
-                <h1> Aspiring Outdoorsman</h1>
+            <div class="container-fluid text-center banner">
+                <img src="data/enjoy-the-outdoors/images/banner.jpg" alt="Site banner"  class="img-fluid">
+                <div class="centered p-3 bg-warning banner-text"> Aspiring Outdoorsman</div>
                 
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light"><!--Navbar-->
-                    <div class="container-fluid bg-success text-white">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light"><!--Navbar-->
+                    <div class="container-fluid bg-warning text-white">
                         
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -23,16 +25,30 @@
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
-                            <a class="nav-link" href="Products.html">Products</a>
-                            
+                            <a class="nav-link" href="mountainsInfo.html">Mountains Info</a>
+                            <a class="nav-link" href="nationalParks.html">National Parks</a>
                             </div>
                         </div>
                     </div>
                 </nav>
         </header>
+        <div class="container-fluid bg-warning-subtle">
+            <article class="container ">
+                <p>The world is a beautiful place that more people should experience. </p>
+                <p>Our goal is to educate people and help them find the experience they seek to find enjoying nature</p>
+
+            </article>
+
+        </div>
+        <footer class="p-3 text-body-secondary text-center text-small main ">
+            <p class="mb-1">© 2023 Aspiring Outdoorsman</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Privacy</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
         
     </body>
-    <footer>
-
-    </footer>
+    
 </html>
