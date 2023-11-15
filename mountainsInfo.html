@@ -10,7 +10,7 @@
         <link href="CSS/main.css" rel="stylesheet" >
         <script src="/Data/enjoy-the-outdoors/scripts/mountainData.js"></script>
     </head>
-    <body>
+    <body class="bg-warning-subtle">
         <header>
             <div class="container-fluid text-center banner">
                 <img src="data/enjoy-the-outdoors/images/banner.jpg" alt="Site banner"  class="img-fluid">
@@ -33,7 +33,14 @@
                     </div>
                 </nav>
         </header>
-        <footer class="p-3 text-body-secondary text-center text-small main ">
+        <div class="card container bg-warning-subtle text-center">
+            <h1>Mountains</h1>
+            <select name="mountainsList" id="list"><option value="">Select a Mountain</option></select>
+            <p id="mountainsNumber"></p>
+            <p id="results"></p>
+        </div>
+        
+        <footer class="container-fluid text-body-secondary text-center text-small main ">
             <p class="mb-1">© 2023 Aspiring Outdoorsman</p>
             <ul class="list-inline">
               <li class="list-inline-item"><a href="#">Privacy</a></li>
@@ -43,5 +50,22 @@
         </footer>
         
     </body>
+    <script>
+        const mountainsNumber =document.getElementById("mountainsNumber");
+        mountainsNumber.innerHTML += mountainsArray.length;
+        mountainsArray.forEach(mountain =>{
+            const option =document.createElement("option");
+            option.innerHTML=mountain.name;
+            list.appendChild(option);
+        });
+        list.addEventListener("change",event=>{
+            let mountain = mountainsArray.find(m=>m.name == event.target.value);
+            results.innerHTML=`<h1>${mountain.name}</h1>`;
+            results.innerHTML+=mountain.desc;
+            results.innerHTML+=`<h3>Elevation: ${mountain.elevation} feet</h3>`;
+            results.innerHTML+=`<h3>Effort: ${mountain.effort}</h3>`;
+            results.innerHTML+=`<img src="data/enjoy-the-outdoors/images/${mountain.img}" class="card-img-top" alt="${mountain.name}">`;
+        });
+    </script>
     
 </html>

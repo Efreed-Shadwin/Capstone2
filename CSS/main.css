@@ -6,7 +6,7 @@ footer {
     background-color:#e4a11b;
     position:fixed;
     bottom:0;
-    top: 100;
+    top:100;
     right: 0;
     left: 0;
     margin-bottom:0;
@@ -47,4 +47,8 @@ p{
 }
 body{
     font-family: dailyFlashback,serif; 
+    position:relative;
+}
+.card {
+    margin-bottom:5em;
 }
