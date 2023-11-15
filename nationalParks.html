@@ -43,11 +43,11 @@
     </header>
     <div class="container text-center">
         <h1>Parks</h1>
-        <select name="location" id="locationsList">
-            <option value="">Select a Location</option>
-        </select>
         <select name="parkType" id="parkTypeList">
             <option value="">Select a Park Type</option>
+        </select>
+        <select name="location" id="locationsList">
+            <option value="">Select a Location</option>
         </select>
         <div id="results">Results</div>
     </div>
@@ -79,7 +79,31 @@
             (selectedParkType == "" || p.LocationName.includes(selectedParkType))
     }
     function getCard(p) {
-        return `<div class="card">${p.LocationName}<div><b>${p.State}</b></div></div>`;
+        let phoneNumber = `Phone number: ${p.Phone}`;
+        let faxNumber = `Fax number: ${p.Fax}`;
+        let web = `For more info <a href="${p.Visit}">${p.Visit}</a>`;
+        if(p.Phone!=0){
+            phone=`<h4>${phoneNumber}  `
+        }
+        else{
+            phone='<h4>Phone number: No number listed  '
+        }
+        if(p.Fax!=0){
+            fax=`${faxNumber}</h4>`
+        }
+        else{
+            fax='Fax number: No number listed</h4>'
+        }
+        if(p.Visit!=undefined){
+            web=`<h4>${web}</h4>`
+        }
+        else{
+            web=`<h4>No Website listed</h4>`
+        }
+        let contactInfo = phone+fax+web
+        return `<div class="card park-card"><h2 class="card-header">${p.LocationName}</h2>
+        <div class="card=text"><h3><b>${p.State}</b></h3></div><h4>${p.Address}, ${p.City}, ${p.ZipCode}</h4><h4></h4>
+        <h4>Location ID: ${p.LocationID}</h4><h4>Coordinates: ${p.Longitude}, ${p.Latitude}</h4>${contactInfo}<div>`;
     }
     function showResults() {
         results.innerHTML = ""
