@@ -51,4 +51,11 @@ body{
 }
 .card {
     margin-bottom:5em;
+    position:relative;
+    padding:0;
 }
+.card-img-bottom{
+    margin-bottom:0;
+    padding:0;
+}
+
