@@ -6,7 +6,6 @@ footer {
     background-color:#e4a11b;
     position:fixed;
     bottom:0;
-    top:100;
     right: 0;
     left: 0;
     margin-bottom:0;
@@ -40,7 +39,8 @@ footer {
     width: 215px
 }
 article{
-    background-color:blanchedalmond
+    background-color:blanchedalmond;
+    text-align: center;
 }
 p{
     text-align:center ;
@@ -50,7 +50,7 @@ body{
     position:relative;
 }
 .card {
-    margin-bottom:5em;
+    margin-bottom:7em;
     position:relative;
     padding:0;
 }

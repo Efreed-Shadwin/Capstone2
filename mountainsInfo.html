@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
         <link href="CSS/main.css" rel="stylesheet" >
         <script src="/Data/enjoy-the-outdoors/scripts/mountainData.js"></script>
     </head>
-    <body class="bg-warning-subtle">
+    <body class="bg-warning-subtle" style="background-image: url(Data/enjoy-the-outdoors/images/leaf-background.jpg)">
         <header>
             <div class="container-fluid text-center banner">
                 <img src="data/enjoy-the-outdoors/images/banner.jpg" alt="Site banner"  class="img-fluid">
@@ -53,24 +53,24 @@
               <li class="list-inline-item"><a href="#">Support</a></li>
             </ul>
         </footer>
-        
+        <script>
+            const mountainsNumber =document.getElementById("mountainsNumber");
+            mountainsNumber.innerHTML += mountainsArray.length;
+            mountainsArray.forEach(mountain =>{
+                const option =document.createElement("option");
+                option.innerHTML=mountain.name;
+                list.appendChild(option);
+            });
+            list.addEventListener("change",event=>{
+                let mountain = mountainsArray.find(m=>m.name == event.target.value);
+                results.innerHTML=`<h1 class="card-title">${mountain.name}</h1>`;
+                results.innerHTML+=`<h2 class="card-text">Elevation: ${mountain.elevation} feet</h2>`;
+                results.innerHTML+=`<h2 class="card-text">Effort: ${mountain.effort}</h2>`;
+                results.innerHTML+=`<h3 class="card-text text-center">${mountain.desc}</h3>`;
+                results.innerHTML+=`<img src="data/enjoy-the-outdoors/images/${mountain.img}" class="card-img-bottom" alt="${mountain.name}">`;
+            });
+        </script>
     </body>
-    <script>
-        const mountainsNumber =document.getElementById("mountainsNumber");
-        mountainsNumber.innerHTML += mountainsArray.length;
-        mountainsArray.forEach(mountain =>{
-            const option =document.createElement("option");
-            option.innerHTML=mountain.name;
-            list.appendChild(option);
-        });
-        list.addEventListener("change",event=>{
-            let mountain = mountainsArray.find(m=>m.name == event.target.value);
-            results.innerHTML=`<h1 class="card-title">${mountain.name}</h1>`;
-            results.innerHTML+=`<h2 class="card-text">Elevation: ${mountain.elevation} feet</h2>`;
-            results.innerHTML+=`<h2 class="card-text">Effort: ${mountain.effort}</h2>`;
-            results.innerHTML+=`<h3 class="card-text text-center">${mountain.desc}</h3>`;
-            results.innerHTML+=`<img src="data/enjoy-the-outdoors/images/${mountain.img}" class="card-img-bottom" alt="${mountain.name}">`;
-        });
-    </script>
+    
     
 </html>
