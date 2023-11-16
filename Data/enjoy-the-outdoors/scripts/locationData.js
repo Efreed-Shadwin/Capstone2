@@ -28,6 +28,7 @@ const locationsArray = [
     "Mississippi",
     "Missouri",
     "Montana",
+    "MP-Japan",
     "Nebraska",
     "Nevada",
     "New Hampshire",
