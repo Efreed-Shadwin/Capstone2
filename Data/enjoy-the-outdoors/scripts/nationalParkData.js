@@ -1098,7 +1098,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "CATO",
-    LocationName: "Catoctin Mountain Park",
+    LocationName: "Catoctin Mountain Park (National Park)",
     Address: "Catoctin Mountain Park, 6602 Foxville Road",
     City: "Thurmont",
     State: "Maryland",
@@ -1251,7 +1251,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "CBPO",
-    LocationName: "Chesapeake Bay Gateways Network",
+    LocationName: "Chesapeake Bay Gateways Network (National Park Service Partner)",
     Address: "410 Severn Avenue, Suite 109",
     City: "Annapolis",
     State: "Maryland",
@@ -1270,7 +1270,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "chch",
-    LocationName: "Chickamauga & Chattanooga National Military Park",
+    LocationName: "Chickamauga & Chattanooga National Military Park(Historic District)",
     Address: "P.O. Box 2128 (Mailing), 3370 LaFayette Road (Shipping)",
     City: "Fort Oglethorpe",
     State: "Georgia",
@@ -1328,7 +1328,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "CIRO",
-    LocationName: "City of Rocks National Reserve",
+    LocationName: "City of Rocks National Reserve (National Historic Landmark)",
     Address: "City of Rocks National Reserve, P.O. Box 169",
     City: "Almo",
     State: "Idaho",
@@ -1635,7 +1635,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "DEMO",
-    LocationName: "Deshler Morris House",
+    LocationName: "Deshler-Morris House(Historic Site)",
     Address: "143 S. Third Street",
     City: "Philadelphia",
     State: "Pennsylvania",
@@ -1903,7 +1903,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "ESSE",
-    LocationName: "Essex National Heritage Area",
+    LocationName: "Essex National Heritage Area(Historic Districts)",
     Address: "221 Essex Street, Suite 41",
     City: "Salem",
     State: "Massachusetts",
@@ -2112,7 +2112,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "FOFO",
-    LocationName: "Fort Foote Park",
+    LocationName: "Fort Foote Park (Historic Fort)",
     Address: "13551 Fort Washington Road",
     City: "Fort Washington",
     State: "Maryland",
@@ -2397,7 +2397,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "FOWA",
-    LocationName: "Fort Washington Park",
+    LocationName: "Fort Washington Park (Historic Fort)",
     Address: "13551 Fort Washington Road",
     City: "Fort Washington",
     State: "Maryland",
@@ -2435,7 +2435,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "FRSP",
-    LocationName: "Fredericksburg & Spotsylvania National Military Park",
+    LocationName: "Fredericksburg & Spotsylvania National Military Park (Historic Battlefields)",
     Address: "Superintendent, 120 Chatham Lane",
     City: "Fredericksburg",
     State: "Virginia",
@@ -2666,7 +2666,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "GLEC",
-    LocationName: "Glen Echo Park",
+    LocationName: "Glen Echo Park (Recreation Area)",
     Address: 0,
     City: "Glen Echo Park",
     State: "Missouri",
@@ -2894,7 +2894,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "GREE",
-    LocationName: "Greenbelt Park",
+    LocationName: "Greenbelt Park (National Park Partner)",
     Address: "6565 Greenbelt Road",
     City: "Greenbelt",
     State: "Maryland",
@@ -3047,7 +3047,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "HAHA",
-    LocationName: "Harmony Hall",
+    LocationName: "Harmony Hall (Historic Site, National Park Partner)",
     Address: "13551 Fort Washington Road",
     City: "Fort Washington",
     State: "Maryland",
@@ -3351,7 +3351,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "INDU",
-    LocationName: "Indiana Dunes National Lakeshore",
+    LocationName: "Indiana Dunes National Lakeshore (National Park)",
     Address: "1100 N. Mineral Springs Road",
     City: "Porter",
     State: "Indiana",
@@ -3370,7 +3370,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "inup",
-    LocationName: "Inupiat Heritage Center",
+    LocationName: "Inupiat Heritage Center (National Park Partner)",
     Address: "Inupiat Heritage Center, P.O.Box 69",
     City: "Barrow",
     State: "Alaska",
@@ -4113,7 +4113,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "MAAC",
-    LocationName: "Maine Acadian Culture",
+    LocationName: "Maine Acadian Culture (Heritage Center)",
     Address: "c/o Acadia National Park, P.O. Box 177",
     City: "Bar Harbor",
     State: "Maine",
@@ -4570,7 +4570,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "NACE",
-    LocationName: "National Capital Parks-East",
+    LocationName: "National Capital Parks-East (National Park Administration)",
     Address: "1900 Anacostia Dr., SE",
     City: "Washington",
     State: "DC",
@@ -5010,7 +5010,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "OXHI",
-    LocationName: "Oxon Cove Park & Oxon Hill Farm",
+    LocationName: "Oxon Cove Park & Oxon Hill Farm (National Parks Partner Historic District)",
     Address: "1900 Anacostia Dr. S.W.",
     City: "Washington",
     State: "DC",
@@ -5077,7 +5077,7 @@ const nationalParksArray = [
     Latitude: 25.927065,
     Longitude: -97.511873,
     Location: {
-        coordinates: [
+        coordinates: [ 
         -97.511873,
         25.927065
         ],
@@ -5086,13 +5086,13 @@ const nationalParksArray = [
     },
     {
     LocationID: "usar",
-    LocationName: "Park News",
+    LocationName: "Pearl Harbor National Memorial",
     Address: "Superintendent, 1 Arizona Memorial Place",
     City: "Honolulu",
     State: "Hawaii",
     ZipCode: "96818-3145",
-    Phone: "(808) 422-3300",
-    Fax: "(808) 483-8608",
+    Phone: "(808) 422-3399",
+    Fax: "(808) 725-6161",
     Latitude: 21.366479,
     Longitude: -157.93779,
     Location: {
@@ -5429,7 +5429,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "redw",
-    LocationName: "Redwood National and State Parks",
+    LocationName: "Redwood National and State Parks (National Park and State Park)",
     Address: "Redwood National & State Parks, 1111 Second Street",
     City: "Crescent City",
     State: "California",
@@ -5505,7 +5505,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "ROCA",
-    LocationName: "Roosevelt Campobello International Park",
+    LocationName: "Roosevelt Campobello International Park (National Park Partner)",
     Address: "Executive Secretary, P.O. Box 97",
     City: "Lubec",
     State: "Maine",
@@ -6323,7 +6323,7 @@ const nationalParksArray = [
     },
     {
     LocationID: "tule",
-    LocationName: "Tule Lake Unit",
+    LocationName: "Tule Lake Unit (Historic Site)",
     Address: "Tule Lake Unit, P.O. Box 1240",
     City: "Tulelake",
     State: "California",

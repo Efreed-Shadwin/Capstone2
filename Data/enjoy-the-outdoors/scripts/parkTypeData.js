@@ -1,15 +1,19 @@
 const parkTypesArray = [
-    "National Park",
-    "National Monument",
-    "Recreation Area",
-    "Scenic Trail",
     "Battlefield",
+    "Heritage",
     "Historic",
-    "Memorial",
-    "Preserve",
     "Island",
-    "River",
+    "Lakeshore",
+    "Memorial",
+    "Military Park",
+    "National Monument",
+    "National Park",
+    "Parkway",
+    "Preserve",
+    "Recreation",
+    "Reserve",
+    "Scenic Trail",
     "Seashore",
-    "Trail",
-    "Parkway"
+    "River",
+    "Trail"
 ]
