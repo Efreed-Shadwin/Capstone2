@@ -81,7 +81,7 @@
     function getCard(p) {
         let phoneNumber = `Phone number: ${p.Phone}`;
         let faxNumber = `Fax number: ${p.Fax}`;
-        let web = `For more info <a href="${p.Visit}">${p.Visit}</a>`;
+        let web = `For more info <a href="${p.Visit}" target="_blank">${p.Visit}</a>`;
         if(p.Phone!=0){
             phone=`<h4>${phoneNumber}  `
         }
