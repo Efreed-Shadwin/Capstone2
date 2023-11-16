@@ -43,13 +43,15 @@
     </header>
     <div class="container text-center">
         <h1>Parks</h1>
-        <select name="parkType" id="parkTypeList">
-            <option value="">Select a Park Type</option>
-        </select>
-        <select name="location" id="locationsList">
-            <option value="">Select a Location</option>
-        </select>
-        <div id="results">Results</div>
+        <div class="row">
+            <select class="col-2 form-select form-select-lg bg-warning-subtle w-25"name="parkType" id="parkTypeList">
+                <option value="">Select a Park Type</option>
+            </select>
+            <select class="col-2 form-select form-select-lg bg-warning-subtle w-25" name="location" id="locationsList">
+                <option value="">Select a Location</option>
+            </select>
+            <div id="results">Results</div>
+        </div>
     </div>
     <footer class="p-3 text-body-secondary text-center text-small main ">
         <p class="mb-1">© 2023 Aspiring Outdoorsman</p>
@@ -60,16 +62,16 @@
         </ul>
     </footer>
     <script>
-        locationsArray.forEach(location => locationsList.innerHTML += `<option>${location}</option>`);
         parkTypesArray.forEach(pt => parkTypeList.innerHTML += `<option>${pt}</option>`);
-        let selectedLocation = "";
+        locationsArray.forEach(location => locationsList.innerHTML += `<option>${location}</option>`);
         let selectedParkType = "";
-        locationsList.addEventListener("change", e => {
-            selectedLocation = e.target.value;
-            showResults();
-        });
+        let selectedLocation = "";
         parkTypeList.addEventListener("change", e => {
             selectedParkType = e.target.value;
+            showResults();
+        });
+        locationsList.addEventListener("change", e => {
+            selectedLocation = e.target.value;
             showResults();
         });
         function isMatch(p) {

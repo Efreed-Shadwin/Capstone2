@@ -41,6 +41,7 @@ footer {
 article{
     background-color:blanchedalmond;
     text-align: center;
+    border-radius:12px;
 }
 p{
     text-align:center ;
@@ -57,5 +58,17 @@ body{
 .card-img-bottom{
     margin-bottom:0;
     padding:0;
+}
+.motto{
+    margin-top:2em;
+    padding:1em;
+}
+.goal{
+    margin-top:2em;
+    padding:1em;
+}
+.form-select{
+    margin-left:auto;
+    margin-right:auto;
 }
 
