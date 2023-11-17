@@ -39,10 +39,17 @@ document.addEventListener("DOMContentLoaded", e=> {
             web = `<h4>No Website listed</h4>`
         }
         let contactInfo = phone + fax + web
-        return `<div class="card park-card bg-warning-subtle"><h2 class="card-header">${p.LocationName}</h2>
-        <div class="card=text"><h3><b>${p.State}</b></h3></div><h4>${p.Address}, ${p.City}, ${p.ZipCode}</h4><h4></h4>
-        <h4>Location ID: <a href="https://www.google.com/maps/search/?api=1&query=${p.Latitude},${p.Longitude}" target="_blank">${p.LocationID}</a> </h4>
-        <h4>Coordinates: ${p.Longitude}, ${p.Latitude}</h4>${contactInfo}<div>`;
+        return `<div class="card park-card bg-warning-subtle">
+                    <h2 class="card-header">${p.LocationName}</h2>
+                    <div class="card=text">
+                        <h3>
+                            <b>${p.State}</b>
+                        </h3>
+                    </div>
+                    <h4>${p.Address}, ${p.City}, ${p.ZipCode}</h4>
+                    <h4>Location ID: <a href="https://www.google.com/maps/search/?api=1&query=${p.Latitude},${p.Longitude}" target="_blank">${p.LocationID}</a> </h4>
+                    <h4>Coordinates: ${p.Longitude}, ${p.Latitude}</h4>${contactInfo}
+                <div>`;
     }
     function showResults() {
         results.innerHTML = ""
