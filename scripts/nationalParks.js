@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", createParkCard=> {
      });
     locationsList.addEventListener("change", npl => {
         selectedLocation = npl.target.value;
-        
+        showResults();
     });
     function isMatch(npd) {
         return (selectedLocation == "" || npd.State == selectedLocation) &&
