@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", createParkCard=> {
      });
     locationsList.addEventListener("change", npl => {
         selectedLocation = npl.target.value;
-        showResults();
+        
     });
     function isMatch(npd) {
         return (selectedLocation == "" || npd.State == selectedLocation) &&
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", createParkCard=> {
         let contactInfo = phone + fax + web
         return `<div class="card park-card bg-warning-subtle">
                     <h2 class="card-header">${npd.LocationName}</h2>
-                    <div class="card=text">
+                    <div class="card-text">
                         <h3>
                             <b>${npd.State}</b>
                         </h3>
@@ -58,3 +58,4 @@ document.addEventListener("DOMContentLoaded", createParkCard=> {
     }
     showResults();
 });
+// npd stands for national park data
